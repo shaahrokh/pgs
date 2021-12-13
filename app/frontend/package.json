@@ -1,0 +1,19 @@
+{
+  "name": "pgs_frontend",
+  "version": "1.0.0",
+  "description": "project governance system frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaahrokh/pgs.git"
+  },
+  "author": "Shahrokh Moghimi <shahrokh.moghimi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaahrokh/pgs/issues"
+  },
+  "homepage": "https://github.com/shaahrokh/pgs#readme"
+}

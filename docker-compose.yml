@@ -14,5 +14,19 @@ services:
       - ./app/backend:/app
       - ./tmp/.npm:/root/.npm
       - ./logs:/logs
-    command: tail -f /dev/null      
+    command: tail -f /dev/null
+
+  app-fronted:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: pgs-frontend
+    working_dir: /app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app/frontend:/app
+      - ./tmp/.npm:/root/.npm
+      # - ./logs:/logs
+    command: tail -f /dev/null       
   
