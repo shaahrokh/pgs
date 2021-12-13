@@ -1,6 +1,5 @@
 version: '3.9'
 
-
 services:
   # nodejs application services (api)
   app-backend:
@@ -8,11 +7,12 @@ services:
       context: .
       dockerfile: Dockerfile.backend
     container_name: pgs-backend
-    working_dir: /app/backend
+    working_dir: /app
     ports:
-      - "3001:3001"
+      - "9000:9000"
     volumes:
-      - ./app/backend:/app/backend
+      - ./app/backend:/app
       - ./tmp/.npm:/root/.npm
+      - ./logs:/logs
     command: tail -f /dev/null      
   

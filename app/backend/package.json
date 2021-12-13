@@ -1,0 +1,19 @@
+{
+  "name": "pgs_backend",
+  "version": "1.0.0",
+  "description": "project gavernance system (backend)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaahrokh/pgs.git"
+  },
+  "author": "Shahrokh Moghimi <shahrokh.mgohimi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaahrokh/pgs/issues"
+  },
+  "homepage": "https://github.com/shaahrokh/pgs#readme"
+}

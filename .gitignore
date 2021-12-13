@@ -7,7 +7,15 @@ yarn-error.log*
 lerna-debug.log*
 
 # Dependency directories
-node_modules/
+# backend
+app/backend/node_modules/
+app/frontend/node_modules/
+
+# coverage
+app/backend/coverage/
+
+# dist
+app/frontend/dist/
 
 # Optional npm cache directory
 .npm
@@ -17,4 +25,7 @@ node_modules/
 .env.test
 
 .cache
+
+# tmp
+tmp
 
