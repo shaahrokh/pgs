@@ -17,6 +17,9 @@ app/backend/coverage/
 # dist
 app/frontend/dist/
 
+# database 
+data
+
 # Optional npm cache directory
 .npm
 
