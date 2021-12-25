@@ -8,6 +8,7 @@ services:
       dockerfile: Dockerfile.backend
     container_name: pgs-backend
     working_dir: /app
+    restart: always
     ports:
       - "9000:9000"
     volumes:
@@ -24,6 +25,7 @@ services:
       dockerfile: Dockerfile.frontend
     container_name: pgs-frontend
     working_dir: /app
+    restart: always
     ports:
       - "8080:80"
     volumes:
