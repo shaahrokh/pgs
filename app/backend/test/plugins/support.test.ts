@@ -8,4 +8,7 @@ test('support works standalone', async (t) => {
   await fastify.ready()
 
   t.equal(fastify.someSupport(), 'hugs')
+
+   // Tear down our app after we are done
+   t.teardown(() =>  void fastify.close())
 })

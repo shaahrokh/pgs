@@ -1,5 +1,5 @@
 import fp from 'fastify-plugin'
-const { Client } = require('pg')
+import { Client } from 'pg';
 
 const client  = new Client({
     user: "admin",

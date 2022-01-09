@@ -5,12 +5,27 @@ const root: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
     fastify.route({
         method: 'GET',
         url: '/',
+        schema : {
+            // tags: ['HealthCheck'],
+            response: {
+                200: {
+                    type: 'object',
+                    properties: {
+                        status: { type: 'string' },
+                        // timestamp: { type: 'string', format: 'date-time'},
+                    }
+                }
+            }
+        },
         handler :async (request, reply) => {
-            return {root: true}
+            return {
+                status: 'ok', 
+                // timestamp: new Date().toISOString()
+            }
         }
     });
 
-    // fastify.get('/',async (request, reply) => {
+    // fastify.get('/', { schema }, async (request, reply) => {
     //     return {root: true};
     // })    
 }
