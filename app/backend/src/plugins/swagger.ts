@@ -5,7 +5,7 @@ export interface SupportPluginOptions{
 }
 
 export default fp<SupportPluginOptions>(async (fastify, opts) => {
-    fastify.decorate('swagger', function(){
+    // fastify.decorate('swagger', function(){
         fastify.register(require('fastify-swagger'), {
             routePrefix: '/swagger',
             swagger: {
@@ -58,13 +58,13 @@ export default fp<SupportPluginOptions>(async (fastify, opts) => {
             transformStaticCSP: (header : any) => header,
             exposeRoute: true
           })
-    })
+    // })
 
 })
 
 // When using .decorate you have to specify added properties for Typescript
-declare module 'fastify' {
-    export interface FastifyInstance {
-      swagger(): object;
-    }
-  }
+// declare module 'fastify' {
+//     export interface FastifyInstance {
+//       swagger(): object;
+//     }
+//   }
